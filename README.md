@@ -70,13 +70,12 @@ cp src/main/resources/application.properties.example src/main/resources/applicat
 
 ### Step 2: Set Environment Variables
 
-Create a `.env` file in the `backend` directory with your Supabase credentials:
+Create a `.env` file in the `backend` directory (next to `pom.xml`):
 
 ```properties
-SUPABASE_HOST=your-project.supabase.co
-SUPABASE_DB_NAME=postgres
-SUPABASE_USERNAME=postgres
-SUPABASE_PASSWORD=your-database-password
+SPRING_DATASOURCE_URL=jdbc:postgresql://your-host:5432/postgres
+SPRING_DATASOURCE_USERNAME=postgres
+SPRING_DATASOURCE_PASSWORD=your-database-password
 
 # OAuth credentials (optional, for Google login)
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID=your-client-id
