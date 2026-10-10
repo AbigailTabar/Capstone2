@@ -109,7 +109,7 @@ mvn spring-boot:run
 ### Step 1: Configure Environment Variables
 
 ```bash
-cd capstone-project
+cd frontend
 
 # Copy template to create config file (Windows)
 copy .env.example .env.local
@@ -120,7 +120,7 @@ cp .env.example .env.local
 
 ### Step 2: Fill in OAuth Client ID
 
-Open `capstone-project/.env.local` and update:
+Open `frontend/.env.local` and update:
 
 ```env
 VITE_GOOGLE_CLIENT_ID=your-actual-client-id.apps.googleusercontent.com
@@ -155,15 +155,15 @@ npm run dev
 These files contain sensitive credentials and are excluded via `.gitignore`:
 
 - `backend/src/main/resources/application.properties` (real credentials)
-- `capstone-project/.env.local` (real credentials)
-- `capstone-project/.env` (any environment file without .example)
+- `frontend/.env.local` (real credentials)
+- `frontend/.env` (any environment file without .example)
 
 ### ✅ Files Safe to Commit:
 
 These are templates without real credentials:
 
 - `backend/src/main/resources/application.properties.example`
-- `capstone-project/.env.example`
+- `frontend/.env.example`
 
 ---
 
@@ -183,7 +183,7 @@ Wait for: `Started DeliverEaseApplication`
 **Terminal 2 - Start Frontend:**
 
 ```bash
-cd capstone-project
+cd frontend
 npm install
 npm run dev
 ```
@@ -320,7 +320,7 @@ mvn spring-boot:run        # Start development server
 mvn test                   # Run tests
 
 # Frontend Commands
-cd capstone-project
+cd frontend
 npm install                # Install dependencies
 npm run dev                # Start dev server
 npm run build              # Build for production
