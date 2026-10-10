@@ -40,8 +40,8 @@ node --version    # Should show 18.x.x or higher
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/DeliverEase.git
-cd DeliverEase
+git clone https://github.com/AbigailTabar/Capstone2.git
+cd Capstone2
 ```
 
 ### 2. Get Credentials from Team Lead
